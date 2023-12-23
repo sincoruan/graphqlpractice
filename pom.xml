@@ -33,7 +33,13 @@
             <artifactId>playground-spring-boot-starter</artifactId>
             <version>${graphql-spring-boot.version}</version>
         </dependency>
-<!--        <dependency>-->
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>voyager-spring-boot-starter</artifactId>
+            <version>${graphql-spring-boot.version}</version>
+        </dependency>
+
+        <!--        <dependency>-->
 <!--            <groupId>com.graphql-java-kickstart</groupId>-->
 <!--            <artifactId>graphiql-spring-boot-starter</artifactId>-->
 <!--            <version>${graphql-spring-boot.version}</version>-->
