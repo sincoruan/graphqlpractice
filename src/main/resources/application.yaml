@@ -1,0 +1,3 @@
+graphql:
+  servlet:
+    maxQueryDepth: 5

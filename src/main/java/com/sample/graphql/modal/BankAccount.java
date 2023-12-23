@@ -2,14 +2,16 @@ package com.sample.graphql.modal;
 
 
 import lombok.Builder;
+import lombok.Data;
+import lombok.Setter;
 import lombok.Value;
 
 import java.util.UUID;
 
-@Value
 @Builder
+@Setter
 public class BankAccount {
     UUID id;
-    String name;
+    Client client;
     Currency currency;
 }
