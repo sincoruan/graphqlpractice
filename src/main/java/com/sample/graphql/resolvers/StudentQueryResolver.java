@@ -12,8 +12,7 @@ public class StudentQueryResolver implements GraphQLQueryResolver
     @Autowired
     private StudentService studentService;
 
-    public Student student (String name)
-    {
+    public Student student (String name) {
         return studentService.getStudentDetailsByName(name);
     }
 }

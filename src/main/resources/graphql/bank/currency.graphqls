@@ -1,0 +1,6 @@
+enum Currency {
+    CHF
+    USD
+    CH
+    IND
+}

@@ -30,14 +30,26 @@
         </dependency>
         <dependency>
             <groupId>com.graphql-java-kickstart</groupId>
-            <artifactId>graphiql-spring-boot-starter</artifactId>
+            <artifactId>playground-spring-boot-starter</artifactId>
             <version>${graphql-spring-boot.version}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.graphql-java-kickstart</groupId>-->
+<!--            <artifactId>graphiql-spring-boot-starter</artifactId>-->
+<!--            <version>${graphql-spring-boot.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.graphql-java-kickstart</groupId>-->
+<!--            <artifactId>graphql-java-tools</artifactId>-->
+<!--            <version>${graphql-java.version}</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
-            <groupId>com.graphql-java-kickstart</groupId>
-            <artifactId>graphql-java-tools</artifactId>
-            <version>${graphql-java.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
         </dependency>
+
     </dependencies>
 
 </project>
