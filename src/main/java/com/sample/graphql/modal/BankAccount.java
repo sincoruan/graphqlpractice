@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.Setter;
 import lombok.Value;
 
+import java.time.LocalDate;
+import java.time.ZonedDateTime;
 import java.util.UUID;
 
 @Builder
@@ -15,4 +17,6 @@ public class BankAccount {
     Client client;
     Currency currency;
     Assets assets;
+    ZonedDateTime createdTime;
+    LocalDate createdOn;
 }
