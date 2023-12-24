@@ -1,0 +1,4 @@
+type Assets{
+    id: String
+    os: String
+}

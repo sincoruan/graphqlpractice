@@ -1,5 +1,9 @@
 query GET_BANK_ACCOUNT($id: ID){
     bankAccount(id: $id){
+        assets {
+            id
+            os
+        }
         client {
             firstName
             lastName

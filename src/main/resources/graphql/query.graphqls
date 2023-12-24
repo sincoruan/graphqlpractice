@@ -3,6 +3,7 @@ type Query {
     student(name:String) : Student
 #    nonexistentQuery: String
     bankAccount(id: ID): BankAccount
+#    assets: Assets
 }
 
 

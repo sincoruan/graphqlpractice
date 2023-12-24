@@ -14,4 +14,5 @@ public class BankAccount {
     UUID id;
     Client client;
     Currency currency;
+    Assets assets;
 }

@@ -11,10 +11,12 @@ import java.util.UUID;
 @Component
 public class BankAccountResolver implements GraphQLQueryResolver {
     public BankAccount bankAccount(UUID id) {
-        Client clientA = Client.builder().firstName("A").lastName("clientA").build();
-        Client clientB = Client.builder().firstName("B").lastName("clientB").build();
-        clientA.setClient(clientB);
-        clientB.setClient(clientA);
-        return BankAccount.builder().id(id).currency(Currency.CH).client(clientA).build();
+        System.out.println("execute bankAccount");
+//        Client clientA = Client.builder().firstName("A").lastName("clientA").build();
+//        Client clientB = Client.builder().firstName("B").lastName("clientB").build();
+//        clientA.setClient(clientB);
+//        clientB.setClient(clientA);
+//        return BankAccount.builder().id(id).currency(Currency.CH).client(clientA).build();
+        return BankAccount.builder().id(id).currency(Currency.CH).build();
     }
 }
