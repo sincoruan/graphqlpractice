@@ -5,8 +5,3 @@ type Query {
     bankAccount(id: ID): BankAccount
 #    assets: Assets
 }
-
-
-type Mutation {
-        createStudent(input: StudentInput) : Student
-}
