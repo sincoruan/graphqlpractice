@@ -8,12 +8,12 @@ import graphql.schema.DataFetchingEnvironment;
 import org.intellij.lang.annotations.JdkConstants;
 import org.springframework.stereotype.Component;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Component
 public class BankAccountMutation implements GraphQLMutationResolver {
     public BankAccount createBankAccount(CreateBankAccountInput createBankAccountInput, DataFetchingEnvironment e) {
-
         return BankAccount.builder().id(UUID.randomUUID()).currency(Currency.CH).build();
     }
 }
