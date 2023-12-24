@@ -5,9 +5,11 @@ import graphql.GraphQLException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import javax.validation.ConstraintViolationException;
+
 @Component
 public class GraphqlExceptionHander {
-    @ExceptionHandler(GraphQLException.class)
+    @ExceptionHandler({GraphQLException.class})
     public ThrowableGraphQLError handle(GraphQLException graphQLException) {
         return new ThrowableGraphQLError(graphQLException);
     }
